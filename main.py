@@ -15,7 +15,7 @@ def load_objects():
 
 # Input validation: expects exactly 4 floats for features
 class PredictionInput(BaseModel):
-    features: conlist(float, min_items=4, max_items=4)
+    features: conlist(float, min_items=4, max_items=4) # type: ignore
 
 # Output schema with predicted species and confidence score
 class PredictionOutput(BaseModel):
